@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title>Tugas WEB</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/content.css" type="text/css" media="screen" />
+    <link href="jquery-ui.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content">
+        <a class="back" href=""></a>
+        <table border="0" width="100%">
+            <tr>
+                <td width="76%">
+                    <p class="head">
+                        <h1>
+                            <center>BIODATA</center>
+                        </h1>
+                        <p class="head"></p>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table class="table1" width="100%">
+            <tbody>
+                <tr>
+                    <img src="images/photo.jpg" class="photo">
+                <tr>
+                <tr>
+                    <br>
+                </tr>
+                <th width="20%" scope="row">Nama</th>
+                <td width="80%">Shofi Romal 'Izzul 'Ula</td>
+                </tr>
+                <tr>
+                    <th scope="row">NIM</th>
+                    <td>193173116</td>
+                </tr>
+                <table width="100%" border="0" class="dialogtbl">
+                    <tr class="tbltitle">
+                        <td colspan="2">
+                            Data Pribadi
+                        </td>
+                    </tr>
+                    <tr class="tblcont">
+                        <td>
+                            Nama Lengkap
+                            <br>Jenis Kelamin
+                            <br>Tempat/tgl lahir
+                            <br>Status
+                            <br>Alamat
+                        </td>
+                        <td>
+                            : Shofi Romal 'Izzul 'Ula
+                            <br>: Laki-laki
+                            <br>: Blitar, 15 Oktober 1999
+                            <br>: JOMBLO
+                            <br>: Blitar
+                        </td>
+                    </tr>
+                    <tr class="tbltitle">
+                        <td colspan="2">
+                            Pendidikan
+                        </td>
+                    </tr>
+                    <tr class="tblcont">
+                        <td>
+                            Sekolah Menengah Pertama
+                            <br>Sekolah Menengah Atas
+                            <br>Diploma III
+                            
+                        </td>
+                        <td>
+                            : Mtsn 01 Blitar
+                            <br>: SMKN 01 Udanawu
+                            <br>: POLINEMA PSDKU Kediri
+                           
+                        </td>
+                    </tr>
+                    <tr class="tbltitle">
+                        <td colspan="2">
+                            Tentang Saya
+                        </td>
+                    </tr>
+                    <tr class="tblcont">
+                        <td colspan="2">
+                            Saya lahir di Blitar, Besar di Blitar. Sekarang saya Kuliah Di POLINEMA PSDKU Kediri 
+                            jurusan MENEJEMEN INFORMATIKA. Saya bingung mau menulis apa!!!
+                        </td>
+                    </tr>
+                    <tr class="tbltitle">
+                        <td colspan="2">
+                            Kontak
+                        </td>
+                    </tr>
+                    <tr class="tblcont">
+                        <td>
+                            Email
+                            <br>Instagram
+                            <br>Twitter
+                        </td>
+                        <td>
+                            : <a href="mailto:izzulula007@gmail.com">izzulula007@gmail.com</a>
+                            <br>: <a href="https://instagram.com/izzul.qj">@izzul.qj</a>
+                            <br>: <a href=" http://twitter.com/seneng.mlaku">@seneng.mlaku</a>
+                        </td>
+                    </tr>
+                </table>
+            </tbody>
+        </table>
+    </div>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $("#dialog").dialog({
+            autoOpen: false,
+            width: 600,
+            height: 445,
+            modal: true,
+            buttons: [
+                {
+                    text: "Close",
+                    click: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            ]
+        });
+        });
+        // Hover untuk widget  
+        $("#dialog-link, #icons li").hover(
+            function () {
+                $(this).addClass("ui-state-hover");
+            },
+            function () {
+                $(this).removeClass("ui-state-hover");
+            }
+        );  
+    </script>
+</body>
+
+</html>
